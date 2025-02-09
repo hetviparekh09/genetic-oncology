@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar'; // Import Navbar
 import Footer from './components/Footer'; // Import Footer
-import Home from './components/Home'; // Home component for your landing page
+//import Home from './components/Home'; // Home component for your landing page
 import About from './components/About'; // About page
 import CaseStudies from './components/CaseStudies'; // Case Studies page
 import Research from './components/Research'; // Research page
