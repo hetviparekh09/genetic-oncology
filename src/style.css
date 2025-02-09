@@ -381,3 +381,61 @@ form input[type="submit"]:hover {
 .secondary-button:hover {
     background-color: #218838;
 }
+/* Container Styling */
+.page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* Header Styling */
+.page h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* Paragraph Styling */
+.page p {
+  text-align: center;
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+/* List Styling */
+.page ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.page li {
+  background: #f9f9f9;
+  margin: 10px 0;
+  padding: 15px;
+  border-left: 5px solid #2c3e50;
+  display: flex;
+  align-items: center;
+  font-size: 1.1em;
+}
+
+/* Icon Styling */
+.page li::before {
+  content: '📧';
+  margin-right: 10px;
+}
+
+.page li:nth-child(2)::before {
+  content: '📞';
+}
+
+/* Link Styling */
+.page a {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+.page a:hover {
+  text-decoration: underline;
+}
