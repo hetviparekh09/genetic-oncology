@@ -190,35 +190,44 @@ form input[type="submit"]:hover {
 
 /* Hero Section */
 .hero {
-    padding: 100px 20px;
-    text-align: center;
-    color: rgb(13, 11, 11);
-    background: url('./images/DALL·E\ 2025-02-09\ 15.27.31\ -\ A\ high-quality\,\ visually\ stunning\ image\ for\ a\ cancer\ oncology\ genetic\ section.\ The\ scene\ features\ a\ glowing\ 3D\ DNA\ double\ helix\ structure\ in\ vibrant\ b.webp') ;
+  position: relative;
+  background: url('./images/DALL·E\ 2025-02-09\ 15.27.31\ -\ A\ high-quality\,\ visually\ stunning\ image\ for\ a\ cancer\ oncology\ genetic\ section.\ The\ scene\ features\ a\ glowing\ 3D\ DNA\ double\ helix\ structure\ in\ vibrant\ b.webp') ;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
 }
 
-.hero h1 {
-    font-size: 3rem;
-    font-weight: bold;
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 1;
 }
 
-.hero p {
-    font-size: 1.5rem;
-    margin: 20px 0;
+.hero-content {
+  position: relative;
+  z-index: 2;
 }
 
 .cta-button {
-    background-color: #ff9800;
-    color: white;
-    padding: 15px 30px;
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  background-color: #ff6f61;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
 }
 
 .cta-button:hover {
-    background-color: #ff5722;
+  background-color: #e65b50;
 }
+
 
 /* Featured Research Section */
 .featured-research {
